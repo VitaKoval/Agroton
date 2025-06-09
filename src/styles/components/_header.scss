@@ -1,3 +1,18 @@
-.header {
-    border: 1px solid red;
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    font-weight: 500;
 }
+
+.menu__list {
+    display: flex;
+    gap: 0 1.875rem;
+}
+
+.menu__link {
+    text-transform: uppercase;
+}
+

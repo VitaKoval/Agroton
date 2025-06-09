@@ -1,5 +1,4 @@
-# medical-website
-Agroton Landing
+# Agroton Landing
 
 Gulp
 Variable font

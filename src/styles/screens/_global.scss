@@ -10,17 +10,18 @@
 }
 
 html {
-  font-size: 1.125rem;
+  font-size: 1rem;
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
   font-family: var(--main-font-family);
-  font-size: 1.125rem;
-  line-height: 1.5;
-  color: var(--text-secondary-dark-mode);
-  background-color: var(--default-dark);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-primary);
+  background-color: var(--default-light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -76,6 +77,16 @@ textarea {
   resize: none;
 }
 
+.text--bold {
+  font-weight: 600;
+}
+
+.text--color {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+
 // ==============================
 // TYPOGRAPHY
 // ==============================
@@ -86,7 +97,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.4;
   margin-bottom: var(--spacing-medium);
 }
 
@@ -120,11 +131,22 @@ h6 {
 .container {
   position: relative;
   width: 100%;
-  max-width: 2214px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 0.625rem;
   @include respond-to(tablet) {
       max-width: 1200px;
+    }
+}
+
+.container--big {
+  position: relative;
+  width: 100%;
+  max-width: 1840px;
+  margin: 0 auto;
+  padding: 0 0.625rem;
+  @include respond-to(tablet) {
+      max-width: 1400px;
     }
 }
 
@@ -149,20 +171,20 @@ section {
 // ==============================
 .btn {
   display: inline-block;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
-  color: var(--text-white);
-  background-color: var(--secondary-main);
-  border: 2px solid var(--secondary-main);
-  border-radius: 2.438rem;
+  color: var(--text-secondary);
+  background-color: var(--default-dark);
+  border: 2px solid var(--default-dark);
+  border-radius: 3.125rem;
   transition: all 0.3s ease;
-  padding: 16px 24px;
+  padding: 0.625rem 2.5rem;
 
   &:hover {
-    color: var(--secondary-main);
+    color: var(--text-primary);
     background-color: transparent;
   }
 }
