@@ -43,6 +43,7 @@
     border-radius: 20px;
     max-width: 36.25rem;
     padding: 10px 14px;
+    cursor: pointer;
 }
 
 .achievement__img {
@@ -69,4 +70,103 @@
 .achievement__text {
     font-size: 14px;
     line-height: 19px;
+}
+
+.intro__stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 30px 18px;
+    margin-bottom: 70px;
+    background-color: var(--paper);
+    border-radius: 20px;
+}
+
+.stats__item {
+    max-width: 273px;
+    text-align: center;
+    dt {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+    }
+    dd {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.27;
+        color: var(--text-subtext);
+        width: 95%;
+    }
+}
+
+.intro__progress {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.progress__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: var(--text-subtext);
+    span {
+        color: var(--text-primary);
+    }
+}
+
+.progress__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+
+}
+
+.progress__img {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress__content {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    max-width: 948px;
+    width: 100%;
+}
+
+.progress__text {
+    width: 95%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.progress__table {
+   .table__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        gap: 48px;
+        border-bottom: 1px solid;
+        border-color: var(--border-primary);
+        &:first-child {
+            border-top: 1px solid;
+            border-color: var(--border-primary);
+        }
+        dt{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        dd {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: var(--text-subtext);
+        }
+   }
 }
