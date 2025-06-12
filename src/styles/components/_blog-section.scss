@@ -3,7 +3,8 @@
     .container--big {
         background-color: var(--paper);
         border-radius: 20px;
-        padding: 100px 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -38,9 +39,6 @@
     img {
         object-fit: cover;
     }
-}
-.blog__content {
- 
 }
 
 .blog__item--big {

@@ -148,6 +148,9 @@ h6 {
   @include respond-to(tablet) {
       max-width: 1400px;
     }
+  @include respond-to(mobile) {
+    padding: 0 0rem;
+  }
 }
 
 section {
@@ -180,12 +183,12 @@ section {
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
-
+    white-space: nowrap;
     padding: 19px 92px 19px 38px;
     border-radius: 96px;
     &::before {
-      content: '';
-      position: absolute;
+        content: '';
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -199,85 +202,5 @@ section {
         background-image: url(../../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
-    }
-}
-
-
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-// ==============================
-// BACKGROUND IMAGE
-// ==============================
-.bg__image {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    img {
-        width: 100%;
-        height: auto;
-        position: absolute;
-    }
-    &.bg-small {
-        width: 60%;
-    }
-    &.bg-top {
-        top: 0;
-    }
-    &.bg-bottom {
-        bottom: 0;
-        img {
-          bottom: 0;
-        }
-    }
-    &.bg-bottom-out {
-        bottom: -50%;
-    }
-    &.over-content {
-       z-index: 3;
-    }
-    &.overflow-hidden {
-      overflow: hidden;
-    }
-}
-
-// ==============================
-// GLOBAL SECTIONS ELEMENTS
-// ==============================
-
-.section__title {
-    position: relative;
-    font-size: 4.5rem;
-    text-align: center;
-    color: var(--text-white);
-    padding-bottom: 2.625rem;
-    margin-bottom: 198px;
-    &::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        width: 9rem;
-        height: 1.5rem;
-        background: linear-gradient(90deg, #673AB7 48.76%, #3579C5 100%);
-        border-radius: 1rem;
-        
-    }
-    &.underlined-light::after {
-        background: linear-gradient(169.02deg, #B2EBF2 -58.33%, #D1C4E9 60.57%);
     }
 }

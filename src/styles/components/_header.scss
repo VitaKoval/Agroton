@@ -16,3 +16,12 @@
     text-transform: uppercase;
 }
 
+.header__contacts.btn::before {
+    content: none;
+}
+
+.header__contacts.btn {
+    width: 180px;
+    padding: 10px 40px;
+}
+
