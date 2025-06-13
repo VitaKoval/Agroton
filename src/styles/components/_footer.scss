@@ -1,4 +1,4 @@
-footer {
+.footer {
     padding: 100px 0;
     background-color: var(--default-dark);
     color: var(--text-secondary);
@@ -13,9 +13,10 @@ footer {
 
 .footer__bottom {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 12px;
     border-top: 1px solid;
     border-color: var(--paper-white);
     padding-top: 15px;
@@ -38,4 +39,25 @@ footer {
         flex-direction: column;
         gap: 14px;
     }
+}
+
+@include respond-to(tablet) {
+    .footer {
+        padding: 60px 0;
+    }
+    .footer__top {
+        flex-wrap: wrap;
+    }
+    .footer__nav {
+        gap: 14px;
+        .nav__list {
+            gap: 8px;
+        }
+    }
+}
+
+@include respond-to(mobile) {
+    // .footer__bottom {
+    //     flex-wrap: wrap;
+    // }
 }
