@@ -117,6 +117,9 @@
     
 }
 @include respond-to(mobile) {
+    .partners {
+        padding: 54px 0 85px;
+    }
     .partners__info {
         gap: 8px;
         .logo {
