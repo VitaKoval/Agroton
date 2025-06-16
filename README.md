@@ -9,7 +9,7 @@ This project is a modern and responsive landing page developed to represent the 
 ## 📸 Preview
 
 🔗 [Live Demo](https://vitakoval.github.io/Agroton/)  
-![AGROTON Preview](./screenshots/agroton-preview.jpg)
+![AGROTON Preview](./screenshots/agroton-preview.png)
 
 ---
 
