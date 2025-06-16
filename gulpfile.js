@@ -173,3 +173,18 @@ const serve = () => {
 exports.build = series(build, without_min);
 
 exports.default = serve;
+
+
+//--------------------- Deploy GitHub Pages -----------------------------//
+
+var gulp   = require('gulp');
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src("./build/**/*")
+    .pipe(deploy({ 
+      remoteUrl: "https://github.com/VitaKoval/Agroton.git",
+      branch: "gh-pages",
+      push: true
+    }))
+  });
