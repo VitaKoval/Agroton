@@ -137,6 +137,9 @@ h6 {
   @include respond-to(tablet) {
       max-width: 1200px;
     }
+   @include respond-to(mobile) {
+   
+  }
 }
 
 .container--big {
@@ -152,6 +155,13 @@ h6 {
     padding: 0 0rem;
   }
 }
+
+.container.horizontal-scroll {
+  @include respond-to(mobile) {
+        padding: 0px 0px;
+  }
+}
+
 
 section {
   position: relative;
