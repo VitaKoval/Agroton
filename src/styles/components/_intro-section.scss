@@ -1,5 +1,5 @@
 .intro {
-    padding: 6.813rem 0 11.25rem;
+    padding: 109.008px 0 11.25rem;
 }
 .intro__top {
     text-align: center;
@@ -181,9 +181,6 @@
 }
 
 @include respond-to(desktop) {
-    .intro {
-        padding: 1.4rem 0 9rem;
-    }
     .intro__text {
         font-size: 1.6rem;
     }
@@ -202,7 +199,7 @@
 
 @include respond-to(tablet) {
     .intro {
-        padding: 0rem 0 7.2rem;
+        padding: 64px 0 7.2rem;
     }
     .intro__top {
         min-height: 37rem;
@@ -256,7 +253,7 @@
 
 @include respond-to(mobile) {
     .intro {
-        padding: 0rem 0 5rem;
+        padding: 64px 0 5rem;
     }
     .intro__top {
         border-radius: 0;
