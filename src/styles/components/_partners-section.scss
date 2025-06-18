@@ -31,6 +31,7 @@
 .actions__bottom {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -75,7 +76,7 @@
             content: '';
             width: 24px;
             height: 24px;
-            background-image: url(../../img/arrow.svg);
+            background-image: url(../img/arrow.svg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: 6px;
@@ -135,6 +136,9 @@
         }
         .info__link{
             font-size: 14px;
+        }
+        .info__img {
+            display: none;
         }
     }
     .partners__promo {

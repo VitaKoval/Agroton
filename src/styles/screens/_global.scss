@@ -186,12 +186,12 @@ section {
 .btn {
     position: relative;
     display: block;
-    width: 242px;
+    max-width: 242px;
     background-color: var(--default-dark);
     color: var(--text-secondary);
     font-weight: 500;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 1.4;
     text-transform: uppercase;
     white-space: nowrap;
     padding: 19px 92px 19px 38px;
@@ -208,9 +208,24 @@ section {
         top: 3px;
         bottom: 3px;
         background-color: var(--paper-white);
-        border-radius: 96px;
-        background-image: url(../../img/arrow.svg);
+        border-radius: 50%;
+        background-image: url(../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
     }
+}
+
+@include respond-to(mobile) {
+  .btn {
+    max-width: 194px;
+    font-size: 12px;
+    padding: 15px 74px 15px 30px;
+    &::before {
+        width: 42px;
+        height: 42px;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+    }
+  }
 }
