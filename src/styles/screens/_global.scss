@@ -199,7 +199,9 @@ section {
     text-transform: uppercase;
     white-space: nowrap;
     padding: 19px 92px 19px 38px;
+    border: 2px solid var(--default-dark);
     border-radius: 96px;
+    transition: 0.2s ease;
     &::before {
         content: '';
         position: absolute;
@@ -216,6 +218,15 @@ section {
         background-image: url(../img/arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
+        transition: 0.3s ease;
+    }
+    &:hover {
+      background-color: var(--text-secondary);
+      color: var(--default-dark);
+      &::before {
+        background-color: transparent;
+        transform: rotate(45deg);
+      }
     }
 }
 

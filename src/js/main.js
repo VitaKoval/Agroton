@@ -8,6 +8,15 @@ burger.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
 })
 
+const menuLinks = mobileMenu.querySelectorAll('a');
+
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('active');
+    mobileMenu.classList.remove('active');
+  });
+});
+
 // Modal
 document.addEventListener('DOMContentLoaded', function () {
     const MODAL_TIMEOUT = 5000;

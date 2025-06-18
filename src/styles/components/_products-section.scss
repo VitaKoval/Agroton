@@ -40,7 +40,6 @@
     &:nth-child(2n) {
         background-color: var(--paper-white);
         color: var(--text-primary);
-        
     }
 
     .item__img {
@@ -61,6 +60,7 @@
         align-items: center;
         justify-content: center;
         z-index: 2;
+        transition: 0.2s ease;
     }
     .item__title {
         position: relative;
@@ -76,6 +76,11 @@
         font-size: 1rem;
         line-height: 1.375rem;
         z-index: 3;
+    }
+    &:hover {
+        & .item__btn {
+            transform: scale(1.3) translate(2px, -6px);
+        }
     }
 }
 
