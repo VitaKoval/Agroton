@@ -7,6 +7,7 @@
     --text-secondary: #FDFDF0;
     --text-subtext: rgba(14, 13, 13, 0.71);
     --accent: #F2A531;
+    --icons: rgba(14, 13, 13, 0.23);
 
     //Border colors
     --border-primary: rgba(14, 13, 13, 0.23);
@@ -18,12 +19,14 @@
     --paper-green: #355020;
     --paper-white: #FFFFFF;
     --paper-opacity: rgb(253 253 240 / 70%);
+    --dropdown: rgba(0, 0, 0, 0.6);
 
 
 // Transition
     --transition-duration: 0.3s;
 
 // Box-shadow
-    --box-shadow-header: 0 5px 10px rgb(0 0 0 / 25%)
-    --box-shadow-dropdown: 0px 4px 16px rgba(10, 13, 20, 0.32), 0px 16px 56px rgba(10, 13, 20, 0.48), 0px 4px 4px rgba(0, 0, 0, 0.25)
+    --box-shadow-header: 0 5px 10px rgb(0 0 0 / 25%);
+    --box-shadow-modal: 0 0 30px rgba(0, 0, 0, 0.3);
+    --box-shadow-card: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
