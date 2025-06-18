@@ -29,14 +29,14 @@
           
           <nav class="menu js-mobile-menu">
                <ul class="menu__list">
-                    <li class="menu__item"><a href="#" class="menu__link">About company</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Products</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Partners</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+                    <li class="menu__item"><a href="#about" class="menu__link">About company</a></li>
+                    <li class="menu__item"><a href="#products" class="menu__link">Products</a></li>
+                    <li class="menu__item"><a href="#partners" class="menu__link">Partners</a></li>
+                    <li class="menu__item"><a href="#" data-soon data-title="Blog page" class="menu__link">Blog</a></li>
+                    <li class="menu__item"><a href="#contacts" class="menu__link">Contact</a></li>
                </ul>
           </nav>
-          <a href="#" class="btn header__contacts">Contact us</a>
+          <a href="#contacts" class="btn header__contacts">Contact us</a>
      </div>
      </div>
      
@@ -51,14 +51,14 @@
         </div>
         <div class="container horizontal-scroll">
             <div class="intro__achievements">
-                <a href="#" class="intro__achievement">
+                <a href="#" class="intro__achievement" data-soon data-title="This page">
                     <img src="./img/achievement-1.png" alt="Preview blog post" class="achievement__img">
                     <div class="achievement__content">
                         <h4 class="achievement__title">Agroton is among the leaders in wheat production in Ukraine</h4>
                         <p class="achievement__text"><span class="text--bold">We rank</span><span class="text--color"> 4th in Ukraine</span> in terms of wheat production, ensuring high quality grain thanks to modern technologies and fertile Ukrainian fields.</p>
                     </div>
                 </a>
-                <a href="#" class="intro__achievement">
+                <a href="#" class="intro__achievement" data-soon data-title="This page">
                     <img src="./img/achievement-2.png" alt="Preview blog post" class="achievement__img">
                     <div class="achievement__content">
                         <h4 class="achievement__title">Agroton number 1 in chicken production in Ukraine</h4>
@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="container">
-            <dl class="intro__stats">
+            <dl class="intro__stats" id="about">
                 <div class="stats__item">
                     <dt>100%</dt>
                     <dd>quality of production</dd>
@@ -86,7 +86,7 @@
                     <dd>we export products all over the world</dd>
                 </div>
             </dl>
-            <div class="intro__progress">
+            <div class="intro__progress" >
                 <p class="progress__title">
                     <span class="text--bold">Agroton is the largest diversified vertically</span> integrated agricultural producer in Eastern Ukraine. Agroton is a regional leader in the cultivation of agricultural crops, livestock farming
                 </p>
@@ -129,12 +129,12 @@
     </section>
 
 
-    <section class="products">
+    <section class="products" id="products">
     <div class="products__wrap container--big">
         <div class="container">
             <h2 class="products__title">High quality agricultural products</h2>
             <div class="products__list">
-                <a href="#" class="products__item">
+                <a href="#" class="products__item" data-soon data-title="Catalog">
                     <img class="item__img" src="./img/product-1.png" alt="The sacks are filled with grain."/>
                     <h3 class="item__title">Cereal crops</h3>
                     <p class="item__subtitle">(wheat, barley, corn)</p>
@@ -142,7 +142,7 @@
                         <img src="./img/arrow.svg" alt="button arrow"/>
                     </button>
                 </a>
-                <a href="#" class="products__item">
+                <a href="#" class="products__item" data-soon data-title="Catalog">
                     <img class="item__img" src="./img/product-2.png" alt="The sacks are filled with grain."/>
                     <h3 class="item__title">Oilseeds</h3>
                     <p class="item__subtitle">(sunflower, rapeseed, soybean)</p>
@@ -150,7 +150,7 @@
                         <img src="./img/arrow.svg" alt="button arrow"/>
                     </button>
                 </a>
-                <a href="#" class="products__item">
+                <a href="#" class="products__item" data-soon data-title="Catalog">
                     <img class="item__img" src="./img/product-3.png" alt="The sacks are filled with grain."/>
                     <h3 class="item__title">Dairy products</h3>
                     <p class="item__subtitle">(milk, dairy products)</p>
@@ -158,7 +158,7 @@
                         <img src="./img/arrow.svg" alt="button arrow"/>
                     </button>
                 </a>
-                <a href="#" class="products__item">
+                <a href="#" class="products__item" data-soon data-title="Catalog">
                     <img class="item__img" src="./img/product-4.png" alt="The sacks are filled with grain."/>
                     <h3 class="item__title">Bakery products</h3>
                     <p class="item__subtitle">(bread, pastries)</p>
@@ -166,7 +166,7 @@
                         <img src="./img/arrow.svg" alt="button arrow"/>
                     </button>
                 </a>
-                <a href="#" class="products__item">
+                <a href="#" class="products__item" data-soon data-title="Catalog">
                     <img class="item__img" src="./img/product-5.png" alt="The sacks are filled with grain."/>
                     <h3 class="item__title">Poultry farming</h3>
                     <p class="item__subtitle">(chicken, eggs)</p>
@@ -174,7 +174,7 @@
                         <img src="./img/arrow.svg" alt="button arrow"/>
                     </button>
                 </a>
-                <a href="#" class="products__item">
+                <a href="#" class="products__item" data-soon data-title="Catalog">
                     <img class="item__img" src="./img/product-6.png" alt="The sacks are filled with grain."/>
                     <h3 class="item__title">Vegetables and fruits</h3>
                     <p class="item__subtitle">(if available in production)</p>
@@ -183,7 +183,7 @@
                     </button>
                 </a>
             </div>
-            <a href="#" class="btn">
+            <a href="#" class="btn" data-soon data-title="Catalog">
                 See catalog
             </a>
         </div>
@@ -200,14 +200,14 @@
     </div>
     
 </section>
-    <section class="partners">
+    <section class="partners" id="partners">
     <div class="container">
         <div class="partners__wrapper">
             <div class="partners__actions">
                 <h5 class="actions__title">Agroton is a reliable supplier of agricultural products</h5>
                 <div class="actions__bottom">
                     <p class="actions__text">We cooperate with processors, distributors and retail chains, ensuring stable supplies and high quality standards.</p>
-                    <a href="#" class="btn">Contact us</a>
+                    <a href="#contacts" class="btn" >Contact us</a>
                 </div>
             </div>
             <div class="partners__content">
@@ -216,13 +216,13 @@
                         <img src="./img/logo-small.png" alt="Logo Agroton" class="logo">
                         <ul class="info__list">
                             <li class="info__item">
-                                <a href="#" class="info__link"><span class="text--color text--bold">Direct deliveries</span> of products from the manufacturer</a>
+                                <a href="#" class="info__link" data-soon data-title="Direct deliveries page"><span class="text--color text--bold">Direct deliveries</span> of products from the manufacturer</a>
                             </li>
                             <li class="info__item">
-                                <a href="#" class="info__link"><span class="text--color text--bold">Guaranteed</span> traceability and certification</a>
+                                <a href="#" class="info__link" data-soon data-title="Guaranteed traceability and certification page"><span class="text--color text--bold">Guaranteed</span> traceability and certification</a>
                             </li>
                             <li class="info__item">
-                                <a href="#" class="info__link"><span class="text--color text--bold">Individual</span> approach to each partner</a>
+                                <a href="#" class="info__link" data-soon data-title="Individual approach page"><span class="text--color text--bold">Individual</span> approach to each partner</a>
                             </li>
                         </ul>
                     </div>
@@ -243,32 +243,32 @@
             <h2 class="blog__title">Recent blog posts</h2>
             <div class="blog__list">
                 <div class="blog__item blog__item--big">
-                    <a class="blog__img" href="#">
+                    <a class="blog__img" href="#" data-soon data-title="Post page">
                         <img src="./img/blog-1.jpg" alt="Blog image"/>
                     </a>
                     <div class="blog__content">
                         <p class="blog__info">Agroton • 20 Jan 2025</p>
-                        <a href="#" class="blog__link">Agroton expands sown areas</a>
+                        <a href="#" class="blog__link" data-soon data-title="Post page">Agroton expands sown areas</a>
                         <p class="blog__description">This year we increased sown areas by 10%, which will allow us to increase the production of grain and oilseed crops.</p>
                     </div>
                 </div>
                 <div class="blog__item blog__item--small">
-                    <a class="blog__img" href="#">
+                    <a class="blog__img" href="#" data-soon data-title="Post page">
                         <img src="./img/blog-2.jpg" alt="Blog image"/>
                     </a>
                     <div class="blog__content">
                         <p class="blog__info">Agroton • 20 Jan 2025</p>
-                        <a href="#" class="blog__link">Export to a new country!</a>
+                        <a href="#" class="blog__link" data-soon data-title="Post page">Export to a new country!</a>
                         <p class="blog__description">We entered the market of [country name] and expanded the geography of supplies of quality Ukrainian products.</p>
                     </div>
                 </div>
                 <div class="blog__item blog__item--small">
-                    <a class="blog__img" href="#">
+                    <a class="blog__img" href="#" data-soon data-title="Post page">
                         <img src="./img/blog-3.jpg" alt="Blog image"/>
                     </a>
                     <div class="blog__content">
                         <p class="blog__info">Agroton • 20 Jan 2025</p>
-                        <a href="#" class="blog__link">Modern technologies in livestock farming</a>
+                        <a href="#" class="blog__link" data-soon data-title="Post page">Modern technologies in livestock farming</a>
                         <p class="blog__description">Agroton has implemented innovative systems for feeding and caring for livestock, which improves product quality.</p>
                     </div>
                 </div>
@@ -284,23 +284,23 @@
       <div class="footer__nav">
         <p class="nav__title">Navigation</p>
         <ul class="nav__list">
-          <li class="nav_item"><a href="#" class="nav__link">About company</a></li>
-          <li class="nav_item"><a href="#" class="nav__link">Products</a></li>
-          <li class="nav_item"><a href="#" class="nav__link">Partners</a></li>
-          <li class="nav_item"><a href="#" class="nav__link">Blog</a></li>
-          <li class="nav_item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav_item"><a href="#about" class="nav__link">About company</a></li>
+          <li class="nav_item"><a href="#products" class="nav__link">Products</a></li>
+          <li class="nav_item"><a href="#partners" class="nav__link">Partners</a></li>
+          <li class="nav_item"><a href="#" class="nav__link" data-soon data-title="Blog page">Blog</a></li>
+          <li class="nav_item"><a href="#contacts" class="nav__link">Contact</a></li>
         </ul>
       </div>
       <div class="footer__nav">
         <p class="nav__title">Information</p>
         <ul class="nav__list">
-          <li class="nav_item"><a href="#" class="nav__link">Customer Support</a></li>
-          <li class="nav_item"><a href="#" class="nav__link">Delivery Details</a></li>
-          <li class="nav_item"><a href="#" class="nav__link">Terms of cooperation</a></li>
-          <li class="nav_item"><a href="#" class="nav__link">Guarantees</a></li>
+          <li class="nav_item"><a href="#" class="nav__link" data-soon data-title="Customer Support Page">Customer Support</a></li>
+          <li class="nav_item"><a href="#" class="nav__link" data-soon data-title="Delivery Details Page">Delivery Details</a></li>
+          <li class="nav_item"><a href="#" class="nav__link" data-soon data-title="Terms of cooperation page">Terms of cooperation</a></li>
+          <li class="nav_item"><a href="#" class="nav__link" data-soon data-title="Guarantees Page">Guarantees</a></li>
         </ul>
       </div>
-      <div class="footer__nav">
+      <div class="footer__nav" id="contacts">
         <p class="nav__title">Contacts</p>
         <ul class="nav__list">
           <li class="nav_item"><address class="nav__link">Ukraine, Kyiv, ul. Ilyinskaya 8</address></li>
@@ -312,11 +312,25 @@
     </div>
     <ul class="footer__bottom">
       <li class="bottom__item">2025 Agroton© All rights reserved.</li>
-      <li class="bottom__item"><a href="#">Privacy Policy</a></li>
-      <li class="bottom__item"><a href="#">Offer contract</a></li>
+      <li class="bottom__item"><a href="#" data-soon data-title="Privacy Policy Page">Privacy Policy</a></li>
+      <li class="bottom__item"><a href="#" data-soon data-title="Offer contract page">Offer contract</a></li>
     </ul>
   </div>
 </footer>
+
+  <div class="modal" id="modal">
+  <div class="modal__content">
+    <button id="modal-close" class="modal__close" aria-label="Close modal">&times;</button>
+    <p class="modal__text">
+      Oops!<br/>
+      <strong id="modal-title" class="text--color"></strong> isn’t ready yet. <br/> 
+      We’re still building it!
+    </p>
+    <div class="modal__progress">
+      <div class="modal__progress-bar" id="progress-bar"></div>
+    </div>
+  </div>
+</div>
 
     <script src='js/main.min.js'></script>
 </body>
